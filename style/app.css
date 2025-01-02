@@ -417,7 +417,7 @@ body {
 
 }
 .searchbar {
-  width: 100%;
+  max-width: 100%;
   background-color: #eeeeee;
   display: flex;
   justify-content: space-between;
@@ -427,7 +427,7 @@ body {
   margin-top: 1.5rem;
 }
 .searcr-icon {
-    width: 2rem;
+    max-width: 2rem;
     height: 2rem;
     margin-left: 0.5rem;
 }
@@ -440,6 +440,6 @@ body {
     border: none;
     background-color: #eeeeee;
     margin-right: 1rem;
-    width: 30rem;
+    max-width: 30rem;
     padding: 1rem 0;
 }
