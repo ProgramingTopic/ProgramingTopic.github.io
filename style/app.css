@@ -375,7 +375,7 @@ body {
     font-family: "Shabnam";
     background-color: #151b22;
     color: #fff;
-    animation: load 1s;
+    animation: load 2s;
 }
 @keyframes load {
     0% {
@@ -494,4 +494,4 @@ body {
 .box-item__text {
   color: #f5f5f5f5;
 
-}
+}         

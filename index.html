@@ -29,7 +29,7 @@
           <img src="images/serachicon.svg" alt="search" class="search-image">
         </div>
         <div class="search-box">
-          <input type="text" placeholder="جستوجو کنید ..." class="search-box__input">
+          <input type="text" placeholder="جستوجو کنید ..." class="search-box__input" id="find" onkeyup="search()">
         </div>
       </div>
       <div class="boxes">
@@ -39,7 +39,7 @@
           </div>
           <div class="box-item">
             <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
-            <p class="box-item__text">۲۸ قسمت</p>
+            <p class="box-item__text">29 قسمت</p>
           </div>
         </div>
         <div class="box">
@@ -48,7 +48,7 @@
           </div>
           <div class="box-item">
             <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
-            <p class="box-item__text">۲۸ قسمت</p>
+            <p class="box-item__text">30 قسمت</p>
           </div>
         </div>
         <div class="box">
@@ -57,7 +57,7 @@
           </div>
           <div class="box-item">
             <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
-            <p class="box-item__text">۲۸ قسمت</p>
+            <p class="box-item__text">31 قسمت</p>
           </div>
         </div>
         <div class="box">
@@ -66,7 +66,7 @@
           </div>
           <div class="box-item">
             <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
-            <p class="box-item__text">۲۸ قسمت</p>
+            <p class="box-item__text">32 قسمت</p>
           </div>
         </div>
         <div class="box">
@@ -81,5 +81,29 @@
       </div>
     </div>
   </main>
+  <script type="text/javascript">
+    function search() {
+        let filter = document.getElementById('find').value.toUpperCase();
+        let items = document.querySelectorAll('.box'); // انتخاب تمام عناصر با کلاس box
+    
+        for (let i = 0; i < items.length; i++) {
+            let item = items[i];
+            let textContent = ''; // متغیر برای ذخیره متن
+    
+            // جمع‌آوری متن تمام عناصر h2، p، h3 و h4
+            let headersAndParagraphs = item.querySelectorAll('h2, p, h3, h4, h1, a');
+            headersAndParagraphs.forEach(elem => {
+                textContent += elem.innerText; // جمع‌آوری متن
+            });
+    
+            // جستجو در متن جمع‌آوری شده
+            if (textContent.toUpperCase().indexOf(filter) > -1) {
+                item.style.display = ""; // نمایش
+            } else {
+                item.style.display = "none"; // پنهان‌سازی
+            }
+        }
+    }
+    </script>
 </body>
 </html>
