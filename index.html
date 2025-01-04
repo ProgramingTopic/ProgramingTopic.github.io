@@ -1,141 +1,158 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Topic</title>
-  <link rel="shortcut icon" href="images/logo.jpeg" type="image/png">
-  <link rel="stylesheet" href="style/app.css">
-  <meta name="theme-color" content="#151b22">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header-items">
-        <div class="header-item__logo">
-          <img src="images/logo.jpeg" alt="Logo" class="header-logo__image">
-        </div>
-        <div class="header-item__text">
-          <p class="header-text">سلام!</p>
-          <h4 class="header-title">به تاپیک برنامه نویسان خوش امدید</h4>
+  <!DOCTYPE html>
+  <html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic</title>
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/png">
+    <link rel="stylesheet" href="style/app.css">
+    <meta name="theme-color" content="#151b22">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-items">
+          <div class="header-item__logo">
+            <img src="images/logo.jpeg" alt="Logo" class="header-logo__image">
+          </div>
+          <div class="header-item__text">
+            <p class="header-text">سلام!</p>
+            <h4 class="header-title">به تاپیک برنامه نویسان خوش امدید</h4>
+          </div>
         </div>
       </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="searchbar">
+          <div class="searcr-icon">
+            <img src="images/serachicon.svg" alt="search" class="search-image">
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="جستوجو کنید ..." class="search-box__input" id="find" onkeyup="search()">
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="box-icon">
+              <img src="images/internet.svg" alt="" class="box-icon__image">
+            </div>
+            <div class="box-item">
+              <h2 class="box-item__title">رودمپ JavaScript</h2>
+              <a href="rodmap.com" class="box-item__text">وبسایت : rodmap.com</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-icon">
+              <img src="images/internet.svg" alt="" class="box-icon__image">
+            </div>
+            <div class="box-item">
+              <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
+              <p class="box-item__text">30 قسمت</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-icon">
+              <img src="images/internet.svg" alt="" class="box-icon__image">
+            </div>
+            <div class="box-item">
+              <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
+              <p class="box-item__text">31 قسمت</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-icon">
+              <img src="images/internet.svg" alt="" class="box-icon__image">
+            </div>
+            <div class="box-item">
+              <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
+              <p class="box-item__text">32 قسمت</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-icon">
+              <img src="images/internet.svg" alt="" class="box-icon__image">
+            </div>
+            <div class="box-item">
+              <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
+              <p class="box-item__text">۲۸ قسمت</p>
+            </div>
+          </div>
+        </div>
+        <div class="courses">
+          <div class="courses-header">
+            <h2 class="courses-title">تمامی دوره ها</h2>
+            <p class="courses-text">مشاهده همه</p>  
+          </div>
+          <div class="courses-container">
+            <div class="courses-items">
+              <div class="courses-items__logo">
+                <img src="images/javascript.svg" alt="js" class="courses__image">
+              </div>
+              <div class="courses-items__text">
+                <h4 class="courses__title">JavaScript</h4>
+              </div>
+            </div>
+            <div class="courses-items">
+              <div class="courses-items__logo">
+                <img src="images/html.svg" alt="html" class="courses__image">
+              </div>
+              <div class="courses-items__text">
+                <h4 class="courses__title">html</h4>
+              </div>
+            </div>
+            <div class="courses-items">
+              <div class="courses-items__logo">
+                <img src="images/css.svg" alt="css" class="courses__image">
+              </div>
+              <div class="courses-items__text">
+                <h4 class="courses__title">css</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="side">
+      <aside class="sidebar">
+          <div class="sidebar-items___logo">
+            <img src="./images/elearning.svg" alt="home" class="items__image">
+          </div>
+          <div class="sidebar-items___logo">
+            <img src="./images/elearning.svg" alt="home" class="items__image">
+          </div>
+          <div class="sidebar-items___logo">
+            <img src="./images/elearning.svg" alt="home" class="items__image">
+          </div>
+    </aside>
     </div>
-  </header>
-  <main class="main">
-    <div class="container">
-      <div class="searchbar">
-        <div class="searcr-icon">
-          <img src="images/serachicon.svg" alt="search" class="search-image">
-        </div>
-        <div class="search-box">
-          <input type="text" placeholder="جستوجو کنید ..." class="search-box__input" id="find" onkeyup="search()">
-        </div>
-      </div>
-      <div class="boxes">
-        <div class="box">
-          <div class="box-icon">
-            <img src="images/internet.svg" alt="" class="box-icon__image">
-          </div>
-          <div class="box-item">
-            <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
-            <p class="box-item__text">29 قسمت</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-icon">
-            <img src="images/internet.svg" alt="" class="box-icon__image">
-          </div>
-          <div class="box-item">
-            <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
-            <p class="box-item__text">30 قسمت</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-icon">
-            <img src="images/internet.svg" alt="" class="box-icon__image">
-          </div>
-          <div class="box-item">
-            <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
-            <p class="box-item__text">31 قسمت</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-icon">
-            <img src="images/internet.svg" alt="" class="box-icon__image">
-          </div>
-          <div class="box-item">
-            <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
-            <p class="box-item__text">32 قسمت</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-icon">
-            <img src="images/internet.svg" alt="" class="box-icon__image">
-          </div>
-          <div class="box-item">
-            <h2 class="box-item__title">جاوا اسکریپ برای همه</h2>
-            <p class="box-item__text">۲۸ قسمت</p>
-          </div>
-        </div>
-      </div>
-      <div class="courses">
-        <div class="courses-header">
-          <h2 class="courses-title">تمامی دوره ها</h2>
-          <p class="courses-text">مشاهده همه</p>  
-        </div>
-        <div class="courses-container">
-          <div class="courses-items">
-            <div class="courses-items__logo">
-              <img src="images/java-script.png" alt="js" class="courses__image">
-            </div>
-            <div class="courses-items__text">
-              <h4 class="courses__title">JavaScript</h4>
-            </div>
-          </div>
-          <div class="courses-items">
-            <div class="courses-items__logo">
-              <img src="images/html-5-logo.png" alt="html" class="courses__image">
-            </div>
-            <div class="courses-items__text">
-              <h4 class="courses__title">html</h4>
-            </div>
-          </div>
-          <div class="courses-items">
-            <div class="courses-items__logo">
-              <img src="images/css-file.png" alt="css" class="courses__image">
-            </div>
-            <div class="courses-items__text">
-              <h4 class="courses__title">css</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <script type="text/javascript">
-    function search() {
-        let filter = document.getElementById('find').value.toUpperCase();
-        let items = document.querySelectorAll('.box, .courses-items, .courses-header'); // انتخاب تمام عناصر با کلاس box
-    
-        for (let i = 0; i < items.length; i++) {
-            let item = items[i];
-            let textContent = ''; // متغیر برای ذخیره متن
-    
-            // جمع‌آوری متن تمام عناصر h2، p، h3 و h4
-            let headersAndParagraphs = item.querySelectorAll('h2, p, h3, h4, h1, a');
-            headersAndParagraphs.forEach(elem => {
-                textContent += elem.innerText; // جمع‌آوری متن
-            });
-    
-            // جستجو در متن جمع‌آوری شده
-            if (textContent.toUpperCase().indexOf(filter) > -1) {
-                item.style.display = ""; // نمایش
-            } else {
-                item.style.display = "none"; // پنهان‌سازی
-            }
-        }
-    }
-    </script>
-</body>
-</html>
+    <script type="text/javascript">
+      function search() {
+          let filter = document.getElementById('find').value.toUpperCase();
+          let items = document.querySelectorAll('.box, .courses-items, .courses-text'); // انتخاب تمام عناصر با کلاس box
+      
+          for (let i = 0; i < items.length; i++) {
+              let item = items[i];
+              let textContent = ''; // متغیر برای ذخیره متن
+      
+              // جمع‌آوری متن تمام عناصر h2، p، h3 و h4
+              let headersAndParagraphs = item.querySelectorAll('h2, p, h3, h4, h1, a');
+              headersAndParagraphs.forEach(elem => {
+                  textContent += elem.innerText; // جمع‌آوری متن
+              });
+      
+              // جستجو در متن جمع‌آوری شده
+              if (textContent.toUpperCase().indexOf(filter) > -1) {
+                  item.style.display = ""; // نمایش
+              } else {
+                  item.style.display = "none"; // پنهان‌سازی
+              }
+          }
+      }
+      </script>
+  </body>
+  </html>
