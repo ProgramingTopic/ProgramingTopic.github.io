@@ -373,7 +373,7 @@
   /* start project */
 body {
     font-family: "Shabnam";
-    background-color: #151b22;
+    background-color: #1e1e3f;
     color: #fff;
     animation: load 2s;
 }
@@ -429,13 +429,16 @@ body {
 }
 .searchbar {
   max-width: 100%;
-  background-color: #eeeeee;
+  background-color: #33334d;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
   border-radius: 1rem;
   margin-top: 1.5rem;
+}
+::placeholder {
+  color: #fff;
 }
 .searcr-icon {
     max-width: 2rem;
@@ -449,7 +452,7 @@ body {
 .search-box__input {
     outline: none;
     border: none;
-    background-color: #eeeeee;
+    background-color: #33334d;
     margin-right: 1rem;
     max-width: 30rem;
     padding: 1rem 0;
@@ -467,7 +470,7 @@ body {
 .box {
     width: 92%;
     height: 8rem;
-    background-image: linear-gradient(to right,#335EEA, #9545ed);
+    background: #4c4cff;
     display: flex;
     padding: 0.4rem 0.7rem;
     /* flex-direction: row-reverse; */
@@ -553,19 +556,20 @@ body {
     background-color: #00ae5b;
 }
 #box2 {
-  background-color: #ff6d00;
+  background-color: #f7df1e;
 }
 #box3 {
-  background-color: #f4a100;
+  background-color: #ff5733;
 }
 #box4 {
-  background-color: #ff4646;
+  background-color: #33afff;
 }
 .courses__image {
     width: 100%;
     height: 100%;
 }
 .courses-items__text {
+  
 }
 .courses__title {
 
@@ -573,7 +577,7 @@ body {
 /* sidebar */
 .sidebar {
     position: fixed;
-    background-color: #30373d;
+    background-color: #28293e;
     width: 100%;
     margin-top: 1rem;
     height: 4rem;
@@ -622,12 +626,11 @@ body {
 
 }
 .items__image {
-    fill: #9545ed;
     width: 100%;
     height: 100%;
 }
 #id{
-  background-color: #c9d1d9;
+  background-color: #8a8aff;
   padding: 0.5rem;
   border-radius: 2rem;
   /* transform: translateY(-9px); */
