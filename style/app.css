@@ -375,17 +375,6 @@ body {
     font-family: "Shabnam";
     background-color: #17172f;
     color: #fff;
-    animation: load 2s;
-}
-@keyframes load {
-    0% {
-    transform: translateY(-27px);
-    opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
 }
 .container {
     max-width: 576px;
@@ -401,6 +390,12 @@ body {
     display: flex;
     align-items: center;
 }
+.header-item__text p, 
+.header-item__text h4{
+  opacity: 0;
+  animation: loadtop 1s forwards;
+  animation-delay: calc(0.5s * var(--i))
+}
 .header-item__logo {
     width: 3rem;
     height: 3rem;
@@ -411,6 +406,8 @@ body {
     border-radius: 100%;
     border: 4px;
     height: 100%;
+    animation: loadleft 1s forwards;
+    opacity: 0;
 }
 .header-text {
     margin: 0;
@@ -464,7 +461,10 @@ body {
   display: flex;
   gap: 0.7rem;
   overflow-x: scroll;
-  position: relative;
+  position: relative; 
+  opacity: 0;
+  animation: loadtop 1s forwards;
+  animation-delay: 1s;
 
 }
 .box {
@@ -512,12 +512,22 @@ body {
 .courses {
     margin-top: 2rem;
     direction: ltr;
+    animation: loadleft 1s forwards;
+    animation-delay: calc(0.3s * var(--i));
+    opacity: 0;
 }
+.anim div{
+  animation: loadleft 1s forwards;
+  animation-delay: calc(0.5s * var(--i));
+  opacity: 0;
+}
+
 .courses-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
 }
 .courses-header {
     display: flex;
@@ -591,30 +601,6 @@ body {
 .side {
     padding: 0;
 }
-@keyframes sidebarload {
-  0% {
-    opacity: 0;
-    transform: translateY(-35px);
-  }
-  25% {
-    transform: translateY(-25px);
-    opacity: 0;
-
-  }
-  50% {
-    transform: translateY(-25px);
-    opacity: 0;
-
-  }
-  75% {
-    opacity: 0;
-
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 .sidebar-items {
 }
 
@@ -642,4 +628,29 @@ h5 {
 }
 #fix {
   transform: translateX(-3px);
+}
+
+
+/* animation */
+
+
+@keyframes loadleft {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes loadtop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
